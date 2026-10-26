@@ -2,7 +2,7 @@
 
 This repository accompanies the manuscript **A Chinese Multimodal News Dataset with Multiple Forgery Types: Construction and Benchmarking**.
 
-The study presents a Chinese news dataset constructed from source-traceable reports collected from the Sina News platform. It includes original news reports and four categories of controlled forgery: text manipulation, image manipulation, cross-event image–text mismatch, and joint text–image forgery. The labels describe the construction operations performed in this study; they do not constitute independent fact-checking judgments about the original reports.
+The study presents a Chinese news dataset constructed from source-traceable reports collected from the Sina News platform. It includes original news reports and four categories of controlled forgery: text manipulation, image manipulation, cross-event image–text mismatch, and joint text–image forgery. The labels describe the construction operations performed in this study.
 
 ## Current Availability
 
