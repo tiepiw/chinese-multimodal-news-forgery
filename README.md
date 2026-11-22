@@ -75,3 +75,19 @@ No dataset or code license is granted by this release notice. Licensing informat
 ## Repository
 
 https://github.com/tiepiw/chinese-multimodal-news-forgery
+
+## Citation
+
+If you find this dataset or repository useful for your research, please cite our paper once it becomes available.
+
+**Paper Title:** *A Chinese Multimodal News Dataset with Multiple Forgery Types: Construction and Benchmarking*
+
+The formal citation information, including publication venue and DOI, will be updated once the paper is published.
+
+## Contact
+
+For questions regarding the dataset, research collaboration, or academic inquiries, please contact:
+
+**Email:** wyq6696@gsupl.edu.cn
+
+**Affiliation:** School of Artificial Intelligence, Gansu University of Political Science and Law, China.
