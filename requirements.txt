@@ -1,0 +1,14 @@
+# Python 3.10 or 3.11
+# Install the torch/torchvision build appropriate for the local CPU or CUDA environment.
+# Ollama is an external service; the Qwen evaluator uses Python's standard-library HTTP client.
+
+torch==2.11.0
+torchvision==0.26.0
+transformers==4.40.2
+timm==0.6.13
+numpy==2.2.6
+scikit-learn==1.7.2
+Pillow==12.2.0
+tqdm==4.70.1
+safetensors==0.8.0
+tokenizers==0.19.1
