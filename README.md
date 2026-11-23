@@ -8,7 +8,7 @@ This repository accompanies the manuscript **A Chinese Multimodal News Dataset w
 
 The dataset contains 21,249 Chinese news samples, including 10,739 original news samples and 10,510 samples constructed through controlled forgery operations. It is based on source-traceable, complete news reports collected from the Sina News platform and covers text manipulation, image manipulation, cross-event image–text mismatch, and joint text–image forgery.
 
-Samples undergo automated checks and manual review. Labels describe text modification status, overall forgery status, and specific forgery type according to the construction operations performed. Original news denotes reports that were not modified in this study.
+Samples undergo automated checks and manual review. Labels describe text modification status, overall forgery status, and specific forgery type according to the construction operations performed.
 
 ## Dataset access
 
