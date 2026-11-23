@@ -1,24 +1,15 @@
 LICENSING SCOPE
 
-This repository contains original benchmark-specific code and adaptations of
-third-party methods. The MIT License below applies only to original contributions
-by the Chinese Multimodal News Forgery Benchmark contributors. It does not
-relicense third-party source code or any portions derived from it.
+The MIT License below applies to original benchmark-specific code.
+Third-party code and adaptations retain their upstream licenses.
+See THIRD_PARTY_NOTICES.md, LICENSES/, and individual source-file notices.
 
-Third-party components remain subject to their respective upstream licenses,
-copyright notices and conditions. See THIRD_PARTY_NOTICES.md, LICENSES/, and
-notices retained in individual source files. In particular:
+HAMMER-derived components are licensed under S-Lab License 1.0 for
+non-commercial use. Components carrying Apache License 2.0 notices
+retain that license.
 
-- HAMMER-derived components remain subject to S-Lab License 1.0, retained in
-  LICENSES/HAMMER-S-Lab-1.0.txt, including its non-commercial-use condition.
-- Components bearing Apache License 2.0 notices retain those terms. The license
-  text is provided in LICENSES/Apache-2.0.txt.
-- The MIT License below does not grant rights to any other third-party component
-  whose redistribution or use is not otherwise authorized by its rights holder.
-
-News articles, images, modified samples, pretrained weights and externally
-installed models are not covered by this code license. No license to those
-materials is granted by this repository.
+Dataset materials and pretrained model weights are outside the scope
+of this code license.
 
 
 MIT License
