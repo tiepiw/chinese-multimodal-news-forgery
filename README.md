@@ -1,93 +1,45 @@
-# Chinese Multimodal News Forgery Dataset
+# Chinese Multimodal News Forgery Benchmark
 
-This repository accompanies the manuscript **A Chinese Multimodal News Dataset with Multiple Forgery Types: Construction and Benchmarking**.
+This repository accompanies the manuscript **A Chinese Multimodal News Dataset with Multiple Forgery Types: Construction and Benchmarking** and provides benchmark code and documentation.
 
-The study presents a Chinese news dataset constructed from source-traceable reports collected from the Sina News platform. It includes original news reports and four categories of controlled forgery: text manipulation, image manipulation, cross-event image–text mismatch, and joint text–image forgery. The labels describe the construction operations performed in this study.
+[中文说明](README.zh-CN.md) | [Dataset on Hugging Face](https://huggingface.co/datasets/Wangyq112233/chinese-multimodal-news-forgery)
 
-## Current Availability
+## Dataset overview
 
-This repository currently contains project documentation and a data-format illustration only. Dataset files and benchmark evaluation code have not yet been uploaded and are not currently available for download. The repository does not currently provide the materials needed to reproduce the reported benchmark results.
+The dataset contains 21,249 Chinese news samples, including 10,739 original news samples and 10,510 samples constructed through controlled forgery operations. It is based on source-traceable, complete news reports collected from the Sina News platform and covers text manipulation, image manipulation, cross-event image–text mismatch, and joint text–image forgery.
 
-## Dataset Format
+Samples undergo automated checks and manual review. Labels describe text modification status, overall forgery status, and specific forgery type according to the construction operations performed. Original news denotes reports that were not modified in this study; it does not imply independent fact-checking of those reports.
 
-The dataset uses JSON records. The intended streamlined data format contains the following fields:
+## Dataset access
 
-| Field | Type | Description |
-|---|---|---|
-| `id` | Integer | Unique identifier for each news sample. |
-| `title` | String | News headline. |
-| `content` | String | News body text. |
-| `images` | Object | Dictionary containing relative paths to associated image files. |
-| `url` | String | Source URL of the original news report. |
+Dataset files are hosted separately on **Hugging Face**:
 
-The `images` field may contain multiple entries, such as `image1`, `image2`, and `image3`. An empty object (`{}`) indicates that no image is available for the corresponding sample.
+**[Chinese Multimodal News Forgery Dataset](https://huggingface.co/datasets/Wangyq112233/chinese-multimodal-news-forgery)**
 
-The accompanying file **`sample_structure.json`** illustrates the intended record structure using null placeholders. It does not contain actual news text, image paths, source URLs, or experimental records.
+Submit an access request on the dataset page, providing your institution or affiliation and intended use. Requests are reviewed manually. See the dataset card for access conditions, available files, and usage terms.
 
-The study uses fixed training, validation, and test sets. The corresponding split assignments and task-specific labels are planned for release separately. The structure example alone is not sufficient to reproduce the benchmark experiments.
+News texts, images, and modified samples are not distributed through this GitHub repository. Download the required files from Hugging Face after approval and arrange them as described in the benchmark code's README.
 
-## Label Definitions
+## Benchmark tasks
 
-The study defines five categories according to the operations performed during dataset construction.
+The benchmark defines three tasks:
 
-| Forgery Code | Category | Description |
-|---|---|---|
-| `0` | Original News | News reports retained without controlled modifications. |
-| `110` | Text Manipulation | Modification of the news text while retaining the original images, if available. |
-| `101` | Image Manipulation | Modification of visual content while preserving the original news text. |
-| `102` | Cross-Event Image–Text Mismatch | Replacement of an image with an unedited image from another news event. |
-| `111` | Joint Text–Image Forgery | Modification of both textual and visual content. |
+- Text manipulation detection
+- Multimodal forgery detection
+- Fine-grained classification
 
-Three label fields are defined for the benchmark tasks:
+The benchmark subset contains 5,574 samples, divided chronologically by the publication time of the original reports into 3,474 training samples, 1,050 validation samples, and 1,050 test samples.
 
-- `forgery`: Fine-grained category label identifying the construction operation.
-- `mlabel`: Binary label indicating whether a controlled forgery operation has been performed.
-- `label`: Binary label indicating whether the news text has been modified.
+## Code and data terms
 
-These labels are defined according to the dataset construction procedures rather than independent verification of the factual accuracy of the original news reports.
+Code licensing and third-party implementation terms are documented in the accompanying `LICENSE`, `THIRD_PARTY_NOTICES.md`, and `LICENSES/` files. The code license does not apply to dataset content.
 
-The labels and fixed data splits are not currently distributed through this repository.
-
-## Planned Release
-
-We plan to make the following materials publicly available upon publication of the paper:
-
-- Dataset labels and sample identifiers
-- The fixed training, validation, and test splits used in the paper
-- Source indices and references to the original reports, where sharing is permitted
-- Documentation of the construction procedures and label definitions
-- Benchmark evaluation code and configuration files
-
-This list describes a planned release, not materials that are already available. This README will be updated with file descriptions and access instructions as materials are released.
-
-## News Texts and Images
-
-The source news texts and images originate from third parties. Their inclusion in the study does not imply that we hold the right to redistribute them. Public access to an original webpage does not, by itself, establish permission to redistribute its contents.
-
-The availability of full news texts, images, and their modified derivatives will depend on the applicable third-party permissions and licensing terms. These files are not currently distributed through this repository.
-
-If a controlled-access arrangement can be established, its scope, eligibility conditions, and application procedure will be documented here. No such access process is currently offered through this repository.
-
-## Licensing
-
-No dataset or code license is granted by this release notice. Licensing information for materials released in the future will be specified alongside those materials. Third-party content will remain subject to the rights and terms of its respective owners.
-
-## Repository
-
-https://github.com/tiepiw/chinese-multimodal-news-forgery
+Dataset access and use are governed by the conditions stated on the Hugging Face dataset page. Third-party news texts and images remain subject to the rights and terms of their respective owners. Access approval does not transfer ownership of, or grant redistribution rights to, those materials or their modified derivatives.
 
 ## Citation
 
-If you find this dataset or repository useful for your research, please cite our paper once it becomes available.
+Please cite the accompanying manuscript when using the dataset or benchmark:
 
-**Paper Title:** *A Chinese Multimodal News Dataset with Multiple Forgery Types: Construction and Benchmarking*
+*A Chinese Multimodal News Dataset with Multiple Forgery Types: Construction and Benchmarking*.
 
-The formal citation information, including publication venue and DOI, will be updated once the paper is published.
-
-## Contact
-
-For questions regarding the dataset, research collaboration, or academic inquiries, please contact:
-
-**Email:** wyq6696@gsupl.edu.cn
-
-**Affiliation:** School of Artificial Intelligence, Gansu University of Political Science and Law, China.
+Full bibliographic information will be added when available.
