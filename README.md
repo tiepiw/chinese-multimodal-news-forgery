@@ -2,7 +2,7 @@
 
 This repository accompanies the manuscript **A Chinese Multimodal News Dataset with Multiple Forgery Types: Construction and Benchmarking** and provides benchmark code and documentation.
 
-[中文说明](README.zh-CN.md) | [Dataset on Hugging Face](https://huggingface.co/datasets/Wangyq112233/chinese-multimodal-news-forgery)
+[中文说明](README.zh-CN.md) | [Benchmark dataset](https://huggingface.co/datasets/Wangyq112233/chinese-multimodal-news-forgery) | [Full dataset](https://huggingface.co/datasets/Wangyq112233/chinese-multimodal-news-forgery-full)
 
 ## Dataset overview
 
@@ -14,7 +14,8 @@ Samples undergo automated checks and manual review. Labels describe text modific
 
 Dataset files are hosted separately on **Hugging Face**:
 
-**[Chinese Multimodal News Forgery Dataset](https://huggingface.co/datasets/Wangyq112233/chinese-multimodal-news-forgery)**
+- **[Full dataset (21,249 samples)](https://huggingface.co/datasets/Wangyq112233/chinese-multimodal-news-forgery-full)**
+- **[Benchmark splits and additional all-image test set](https://huggingface.co/datasets/Wangyq112233/chinese-multimodal-news-forgery)**
 
 Submit an access request on the dataset page, providing your institution or affiliation and intended use. Requests are reviewed manually.
 
